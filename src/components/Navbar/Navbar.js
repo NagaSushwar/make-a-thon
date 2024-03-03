@@ -27,7 +27,7 @@ function Headerbottom() {
               <li>ABOUT</li>
               <li>TRACKS</li>
               <li>FAQs</li>
-              <li>SIGN&nbsp;IN</li>
+              <li>SIGNIN</li>
             </ul>
           </div>
         </div>

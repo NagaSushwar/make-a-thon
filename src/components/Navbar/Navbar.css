@@ -8,9 +8,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: black;
-    background-image: url("./backkg.jpg");
-    background-size: cover;
+    background: #000000;
+    --gap: 9em;
+    --line: 1px;
+    --color: rgba(255, 255, 255, 0.2);
+  
+    background-image: linear-gradient(
+        -90deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      ),
+      linear-gradient(
+        0deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      );
+    background-size: var(--gap) var(--gap);
+    position: fixed;
+    top: 0;
+    z-index: 100000;
     
 }
 
@@ -19,8 +37,7 @@
     height: fit-content;
     background-color: black !important;
     width: 80%;
-    background-image: url("./backkg.jpg");
-    background-size: cover;
+
     
 }
 #ml{

@@ -1,0 +1,74 @@
+.infomain{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    --gap: 9em;
+    --line: 1px;
+    --color: rgba(255, 255, 255, 0.2);
+  
+    background-image: linear-gradient(
+        -90deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      ),
+      linear-gradient(
+        0deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      );
+    background-size: var(--gap) var(--gap);
+    color: white;
+    box-shadow: 5px 10px 20px 5px yellow inset;
+
+}
+.upinfo{
+    height: 50%;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    
+}
+.downinfo{
+    height: 50%;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.ulinfo{
+    width: 30%;
+    height: 100%;
+}
+.urinfo{
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    overflow-y: scroll;
+}
+.drinfo{
+    width: 30%;
+    height: 100%;
+}
+.dlinfo{
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    overflow-y: scroll;
+}
+.head{
+    font-size: xx-large;
+    font-weight: 600;
+}
