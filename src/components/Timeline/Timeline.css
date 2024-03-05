@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Common styles for both halves */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.Timelinecontainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 2%;
+  overflow-x: hidden;
+  background-size: cover;
+  background: #000000;
+  --gap: 9em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+}
+
+.LeftHalf,
+.RightHalf {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .Timelinecontainer {
+    max-width: 2140px;
+  }
+}
+
+.TimelineHeading {
+  color: #fff;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 500;
+  font-size: 3em; 
+  margin-top: 1em; 
+  text-transform: capitalize;
+}
+
+.LeftHalf {
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+}
+
+.RightHalf {
+  background-image: linear-gradient(
+    -90deg,
+    transparent calc(var(--gap) - var(--line)),
+    var(--color) calc(var(--gap) - var(--line) + 1px),
+    var(--color) var(--gap)
+  ),
+  linear-gradient(
+    0deg,
+    transparent calc(var(--gap) - var(--line)),
+    var(--color) calc(var(--gap) - var(--line) + 1px),
+    var(--color) var(--gap)
+  );
+background-size: var(--gap) var(--gap);
+}
+
+.TimelineHeading {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 3em;
+  margin-top: 1em;
+  margin-right: 5em;
+  text-transform: capitalize;
+}
+
+.Image {
+  height: 600px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+}
+.header1 {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+  font-size: 1.75em;
+  font-size:xx-large;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; /* Adjust as needed */
+
+}
+
+.p1 {
+  color:gold;
+  display: flex;
+  justify-content: space-between;
+}
+.Stages {
+  display: grid;
+    grid-template-rows: repeat(2, 0.5fr) 0.3fr;
+    grid-row-gap: 5px;
+    height: 100%;
+    justify-content: center;
+}
+
+.Stage1{
+  border-radius: 35px; 
+  text-align: center;
+  font-weight: 600;
+  font-size: larger;
+}
+@media (max-width: 767px) {
+  .Timelinecontainer {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .LeftHalf {
+    order: 1; 
+    margin-top: 2em;
+    margin-left: 12em;
+  }
+
+  .RightHalf {
+    order: 2; 
+  }
+}
